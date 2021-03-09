@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+header button {
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 20px;
+  float: left;
+}
+
+header button:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+header > div {
+  float: right;
+}
+
+header > div > div {
+  display: flex;
+  margin: 7px;
+}
+
+.low-importance {
+  color: green;
+}
+.medium-importance {
+  color: yellow;
+}
+.high-importance {
+  color: red;
+}
+
+/* input note */
+.input-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-todo > * {
+  margin: 20px;
+}
+
+/* todo list */
+.todo-list {
+  margin: 10px 20px;
+}
+
+.todo-list > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  margin: 20px;
+  position: relative;
+  padding: 18px;
+}
+
+.todo-list > div > div {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+}
+
+.todo-list > div > div i {
+  margin: 2px;
+}
+
+.priority-light {
+  color: yellowgreen;
+}
+
+/* edit input */
+
+.edit-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -200px;
+  text-align: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 1;
+  border: 1px solid black;
+  visibility: hidden;
+}
+
+.edit-input button {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.edit-input button:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.edit-input p {
+  cursor: pointer;
+}
+
+.edit-input p:hover {
+  color: red;
+}

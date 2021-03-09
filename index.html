@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b3f2b08e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>to do list</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <button>Delete All Notes</button>
+        <div>
+            <div>
+                <i class="fas fa-circle low-importance"></i>
+                <p>&nbsp;&nbsp;low importance</p>
+            </div>
+            <div>
+                <i class="fas fa-circle medium-importance"></i>
+                <p>&nbsp;&nbsp;medium importance</p>
+            </div>
+            <div>
+                <i class="fas fa-circle high-importance"></i>
+                <p>&nbsp;&nbsp;high importance</p>
+            </div>
+        </div>
+        <h1>Your To Do List</h1>
+    </header>
+
+    <!-- input section of note -->
+    <div class="input-todo">
+        <label for="todo">//TODO:</label>
+        <textarea name="todo" id="" cols="30" rows="4"></textarea>
+        <div>
+            <label for="priority">priority:</label>
+            <select name="priority">
+                <option value="0">low</option>
+                <option value="1">medium</option>
+                <option value="2">high</option>
+            </select>
+        </div>
+        <button type="submit"><i class="far fa-check-square"></i></button>
+    </div>
+
+    <!-- actual to do list -->
+    <div class="todo-list"></div>
+
+    <div class="edit-input">
+        <label for="edit">edit:</label>
+
+        <textarea name="edit" id="" cols="30" rows="10"></textarea>
+        <button type="submit">submit</button>
+        <p><i class="far fa-times-circle"></i></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
